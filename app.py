@@ -17,6 +17,7 @@ def main():
     #bar = "00008865511394193353" #testing
     if st.button('check'):
         if not df[df['Collo'] == bar].empty:
+            st.balloons()
             st.success("Barcodes TROVATO:")
             st.dataframe(df[df['Collo']==bar])
         else:
