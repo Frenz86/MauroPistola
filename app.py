@@ -12,7 +12,7 @@ def main():
     SHEET_NAME = 'test'
     foglio_id=0
     url = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&sheet={SHEET_NAME}/edit#gid={foglio_id}'
-    df = pd.read_csv(url,dtype={'Collo':str})
+    df = pd.read_csv(url,dtype={'Collo':str,'customer PO':str})
     bar = st.text_input('inserire il barcode')
     #bar = "00008865511394193353" #testing
     if st.button('check'):
